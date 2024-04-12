@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane prefHeight="383.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.General.Accueil">
+    <fx:include fx:id="Navbar" source="../../Layouts/General/navbar.fxml" />
+
+    <!-- ScrollPane pour le contenu déroulant -->
+    <ScrollPane hbarPolicy="NEVER" layoutY="59.0" prefHeight="341.0" prefWidth="613.0">
+        <content>
+            <!-- Contenu à déplacer -->
+            <AnchorPane prefHeight="400.0" prefWidth="613.0">
+                <!-- ImageView pour l'image en plein page -->
+                <ImageView fitHeight="341.0" fitWidth="613.0">
+                    <image>
+                        <Image url="/Layouts/Images/acc.jpg" />
+                    </image>
+                </ImageView>
+
+                <!-- Rectangle pour la partie noire transparente -->
+                <Rectangle height="341.0" width="613.0">
+                    <fill>
+                        <Color opacity="0.5" /> <!-- Noir semi-transparent -->
+                    </fill>
+                </Rectangle>
+
+                <!-- Texte "Bienvenue dans notre" -->
+                <Text fill="#e8dada" layoutX="146.0" layoutY="162.0" pickOnBounds="false" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 38px; -fx-text-alignment: center;" text="Bienvenue dans notre">
+                    <font>
+                        <Font name="Times New Roman" size="12.0" />
+                    </font>
+                </Text>
+
+                <!-- Texte "communauté artistique" -->
+                <Text fill="#e8dada" layoutX="115.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 38px; -fx-text-alignment: center;" text="communauté artistique" wrappingWidth="388.1767578125">
+                    <font>
+                        <Font name="Times New Roman" size="12.0" />
+                    </font>
+                </Text>
+
+                <!-- Texte "L'art ne fait pas qu'illustrer, il fait vivre" -->
+                <Text fill="WHITE" layoutX="109.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14px; -fx-text-alignment: center;" text="L'art ne fait pas qu'illustrer, il fait vivre" wrappingWidth="388.1767578125">
+                    <font>
+                        <Font name="Times New Roman" size="12.0" />
+                    </font>
+                </Text>
+
+                <!-- Bouton "S'inscrire" -->
+                <Button layoutX="199.0" layoutY="255.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="83.0" style="-fx-background-color: #E5A5FB; -fx-border-radius: 7%; -fx-font-size: 14px;" text="S'inscrire" />
+
+                <!-- Bouton "Se connecter" -->
+                <Button layoutX="302.0" layoutY="255.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="101.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-font-size: 14px;" text="Se connecter" textFill="WHITE" />
+
+                <!-- Texte "Découvrir nos catégories" -->
+                <Text layoutX="200.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-alignment: center;" text="Découvrir nos catégories">
+                    <font>
+                        <Font name="Times New Roman" size="12.0" />
+                    </font>
+                </Text>
+                <ImageView cache="true" fitHeight="351.0" fitWidth="292.0" layoutY="380.0">
+                    <image>
+                        <Image url="/Layouts/Images/aa.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView cache="true" fitHeight="180.0" fitWidth="153.0" layoutX="295.0" layoutY="380.0">
+                    <image>
+                        <Image url="/Layouts/Images/2fe9c5ccdae654bbe538e966f0b80ce9.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView cache="true" fitHeight="166.0" fitWidth="154.0" layoutX="295.0" layoutY="564.0">
+                    <image>
+                        <Image url="/Layouts/Images/d0d791f9bef901a4c4bfb2e2c86ed1ce.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView cache="true" fitHeight="181.0" fitWidth="149.0" layoutX="450.0" layoutY="380.0">
+                    <image>
+                        <Image url="/Layouts/Images/547dd98092a5e45e01e2ef657f6da04f.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView cache="true" fitHeight="167.0" fitWidth="147.0" layoutX="452.0" layoutY="563.0">
+                    <image>
+                        <Image url="/Layouts/Images/9e4d095d347827c829da1e19fcd5625d.jpg" />
+                    </image>
+                </ImageView>
+                <Text fill="WHITE" layoutX="7.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 22px; -fx-font-weight: bold;" text="Peinture" wrappingWidth="114.1767578125">
+                    <font>
+                        <Font name="Times New Roman" size="12.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="299.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Photographie" wrappingWidth="114.1767578125">
+                    <font>
+                        <Font name="Times New Roman" size="12.0" />
+                    </font>
+                </Text>
+                <Text layoutX="453.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Musique" wrappingWidth="114.1767578125">
+                    <font>
+                        <Font name="Times New Roman" size="12.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="299.0" layoutY="585.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Poème" wrappingWidth="114.1767578125">
+                    <font>
+                        <Font name="Times New Roman" size="12.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="455.0" layoutY="584.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px; -fx-font-weight: bold;" text="Sculpture" wrappingWidth="114.1767578125">
+                    <font>
+                        <Font name="Times New Roman" size="12.0" />
+                    </font>
+                </Text>
+                <ImageView cache="true" fitHeight="264.0" fitWidth="613.0" layoutX="-4.0" layoutY="743.0">
+                    <image>
+                        <Image url="/Layouts/Images/2d441dd5c1aa29da6a06405e530f7f62.jpg" />
+                    </image>
+                </ImageView>
+
+                <Rectangle height="267.0" layoutX="-4.0" layoutY="743.0" width="613.0">
+                    <fill>
+                        <Color opacity="0.6" /> <!-- Noir semi-transparent -->
+                    </fill>
+                </Rectangle>
+
+                <ImageView cache="true" fitHeight="184.0" fitWidth="245.0" layoutX="317.0" layoutY="809.0">
+                    <image>
+                        <Image url="/Layouts/Images/4a47271288e1cc223d991ca6ea9ecaae.jpg" />
+                    </image>
+                </ImageView>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#313336bc" height="183.0" layoutX="45.0" layoutY="810.0" stroke="BLACK" strokeType="INSIDE" width="273.0" />
+                <Text fill="WHITE" layoutX="46.0" layoutY="788.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15px;" text="ArtSpace, un des leaders tunisiens de la vente des services artistiques personnalisés" wrappingWidth="515.888671875">
+                    <font>
+                        <Font name="Times New Roman" size="15.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="61.0" layoutY="846.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notre mission est de faciliter la " wrappingWidth="239.888671875">
+                    <font>
+                        <Font name="Times New Roman" size="15.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="60.0" layoutY="872.0" strokeType="OUTSIDE" strokeWidth="0.0" text="découverte et l'acquisition d'oeuvres" wrappingWidth="242.888671875">
+                    <font>
+                        <Font name="Times New Roman" size="15.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="60.0" layoutY="897.0" strokeType="OUTSIDE" strokeWidth="0.0" text="des services artistiques grâce au digital" wrappingWidth="242.888671875">
+                    <font>
+                        <Font name="Times New Roman" size="15.0" />
+                    </font>
+                </Text>
+                <Button fx:id="AProposLabel" onMouseClicked="#retournerALaPageAPropos" layoutX="60.0" layoutY="941.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="168.0" style="-fx-background-color: #F5C428;" text="Lire plus à propos de nous" />
+                <VBox alignment="CENTER" layoutX="70.0" layoutY="1030.0" prefWidth="474.84765625" spacing="10.0">
+                    <Button fx:id="nosMusees" onMouseClicked="#retournerALaPageMuseesArtiste" text="Nos musées" style="-fx-background-color: #B9B9B9; -fx-font-size: 16px;" minWidth="120" minHeight="40" />
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-text-alignment: center;" text="Les meilleurs coups de cœur des artistes" wrappingWidth="367.84765625">
+                        <font>
+                            <Font name="Times New Roman" size="20.0" />
+                        </font>
+                    </Text>
+                </VBox>
+
+                <FlowPane fx:id="flowPane" layoutY="1093.0" prefHeight="245.0" prefWidth="600.0">
+                </FlowPane>
+                <HBox alignment="CENTER" layoutY="1338.0" prefWidth="600.0">
+                    <Button fx:id="voirPlusBtn" onMouseClicked="#retournerALaPageListe" text="Voir plus" style="-fx-background-color: #E5A5FB; -fx-font-size: 16px;" minWidth="120" minHeight="40" />
+                </HBox>
+
+
+            </AnchorPane>
+        </content>
+    </ScrollPane>
+</AnchorPane>

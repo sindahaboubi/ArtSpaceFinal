@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Musee.ConsulterCommande">
+    <children>
+        <fx:include fx:id="Sidebar" source="../../Layouts/Client/sidebar.fxml" />
+        <fx:include fx:id="Navbar" source="../../Layouts/General/navbar.fxml" />
+        <!-- Ajouter le ScrollPane autour de carteContainer -->
+        <ScrollPane fx:id="scrollPane" layoutX="169.0" layoutY="123.0" prefHeight="266.0" prefWidth="400.0">
+            <content>
+                <VBox fx:id="carteContainer" prefHeight="400.0" prefWidth="400.0" spacing="10.0" />
+            </content>
+        </ScrollPane>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2213219e" height="30.0" layoutX="141.0" layoutY="79.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="455.0" />
+        <Text fill="WHITE" layoutX="169.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Liste des Commandes" />
+        <Label layoutX="144.0" layoutY="67.0" onMouseClicked="#handleAjouterCommande" prefHeight="0.0" prefWidth="33.0" style="-fx-font-size: 40px;" styleClass="back-arrow" text="◀" textFill="#f5d000">◀</Label>
+        <TextField fx:id="titleLabel" editable="false" layoutX="389.0" layoutY="143.0" prefHeight="20.0" prefWidth="199.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-background-insets: 0; -fx-border-insets: 0;" />
+        <ComboBox id="comboBoxStatut" fx:id="comboBoxStatut" layoutX="470.0" layoutY="81.0" onAction="#handleFiltrerCommandesParStatut" prefHeight="25.0" prefWidth="96.0" promptText="Par Statut" style="-fx-background-color: #f5d000;">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Facturée" />
+                    <String fx:value="A traiter" />
+                    <String fx:value="Annulée" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+
+
+
+    </children>
+</AnchorPane>

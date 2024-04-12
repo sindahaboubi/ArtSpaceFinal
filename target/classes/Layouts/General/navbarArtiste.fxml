@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<?import javafx.scene.control.Button?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controllers.LayoutsControllers.navBarArtisteController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ced5d7" height="59.0" layoutX="-3.0" layoutY="-1.0" stroke="#41c9e2" strokeType="INSIDE" width="616.0" />
+        <Label fx:id="Mus" onMouseClicked="#goToMusee" alignment="CENTER" contentDisplay="CENTER" layoutX="308.0" layoutY="16.0" prefHeight="30.0" prefWidth="73.0" style="-fx-font-weight: bold;" text="Musées" underline="true">
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </Label>
+        <Label fx:id="Dec" onMouseClicked="#goToDec" alignment="CENTER" contentDisplay="CENTER" layoutX="495.0" layoutY="17.0" prefHeight="30.0" prefWidth="103.0" style="-fx-font-weight: bold;" text="Déconnexion" underline="true">
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </Label>
+
+
+
+
+        <Label fx:id="Oeuv"  onMouseClicked="#goToOeuv" alignment="CENTER" contentDisplay="CENTER" layoutX="402.0" layoutY="16.0" prefHeight="30.0" prefWidth="73.0" style="-fx-font-weight: bold;" text="Oeuvres" underline="true">
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </Label>
+        <ImageView fitHeight="59.0" fitWidth="79.0" layoutX="4.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="/Layouts/Images/logo.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

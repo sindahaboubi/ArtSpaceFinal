@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.DatePicker?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Musee.DetailsMusee">
+    <children>
+        <fx:include fx:id="Sidebar" source="../../Layouts/Client/sidebar.fxml" />
+        <fx:include fx:id="Navbar" source="../../Layouts/General/navbar.fxml" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e5e5e50b" height="268.0" layoutX="142.0" layoutY="104.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.2" width="455.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2213219e" height="30.0" layoutX="143.0" layoutY="81.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="455.0" />
+
+
+        <Button layoutX="143.0" layoutY="83.0" onAction="#retournerALaPagePrecedente" prefHeight="0.0" prefWidth="33.0" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+            <graphic>
+                <Text fill="#f5d000" text="◀" />
+            </graphic>
+        </Button>
+
+        <!-- Button styled to look like the label -->
+
+        <Text fill="WHITE" layoutX="175.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Details Musee" />
+
+
+        <TextField fx:id="NomMusee" layoutX="200.0" layoutY="153.0" promptText="Nom" disable="true" />
+        <TextField fx:id="VilleMusee" layoutX="200.0" layoutY="194.0" promptText="Ville" disable="true" />
+        <DatePicker fx:id="DateDeb" layoutX="200.0" layoutY="237.0" promptText="Date Debut" disable="true" />
+        <DatePicker fx:id="DateF" layoutX="200.0" layoutY="281.0" prefWidth="151.0" promptText="Date Fin" disable="true" />
+        <TextField fx:id="heureO" layoutX="422.0" layoutY="153.0" promptText="Heure Ouverture" disable="true" />
+        <TextField fx:id="heureF" layoutX="422.0" layoutY="193.0" promptText="Heure Fin" disable="true" />
+
+        <TextArea fx:id="DescriptionMusee" layoutX="422.0" layoutY="237.0" prefHeight="70.0" disable="true" prefWidth="150.0" promptText="Description" />
+
+    </children>
+</AnchorPane>

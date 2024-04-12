@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Musee.AjoutMuseeController">
+    <children>
+        <fx:include fx:id="Sidebar" source="../../Layouts/Artiste/sidebar.fxml" />
+        <fx:include fx:id="Navbar" source="../../Layouts/General/navbarArtiste.fxml" />
+
+        <!-- Using a GridPane for better alignment -->
+        <GridPane hgap="10" layoutX="191.0" layoutY="130.0" vgap="10">
+            <!-- First row -->
+            <Label text="Nom:" />
+            <TextField fx:id="NomMusee" promptText="Nom" GridPane.columnIndex="1" />
+            <Label fx:id="NomMuseeError" textFill="RED" />
+
+            <!-- Second row -->
+            <Label text="Ville:" GridPane.rowIndex="1" />
+            <TextField fx:id="VilleMusee" promptText="Ville" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="VilleMuseeError" textFill="RED" GridPane.columnIndex="1" />
+
+            <!-- Third row -->
+            <Label text="Date Debut:" GridPane.rowIndex="2" />
+            <DatePicker fx:id="DateDeb" promptText="Date Debut" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="DateDebError" textFill="RED" GridPane.columnIndex="1" />
+
+            <!-- Fourth row -->
+            <Label text="Date Fin:" GridPane.rowIndex="3" />
+            <DatePicker fx:id="DateF" promptText="Date Fin" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="DateFError" textFill="RED" GridPane.columnIndex="1" />
+
+            <!-- Fifth row -->
+            <Label text="Heure O:" GridPane.rowIndex="4" />
+            <TextField fx:id="heureO" promptText="Heure O" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="heureOError" textFill="RED" GridPane.columnIndex="1" />
+
+            <!-- Sixth row -->
+            <Label text="Heure F:" GridPane.rowIndex="5" />
+            <TextField fx:id="heureF" promptText="Heure F" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="heureFError" textFill="RED" GridPane.columnIndex="1" />
+
+            <!-- Seventh row -->
+            <Label text="Description:" GridPane.rowIndex="6" />
+            <TextArea fx:id="DescriptionMusee" prefHeight="15.0" prefWidth="175.0" promptText="Description" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="DescriptionMuseeError" textFill="RED" GridPane.columnIndex="1" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+
+        <!-- Button -->
+        <Button fx:id="AjouterMusee" layoutX="487.0" layoutY="248.0" mnemonicParsing="false" onAction="#handleAjouterMusee" prefHeight="30.0" prefWidth="73.0" style="-fx-background-color: #808080;" text="Ajouter" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+
+        <!-- Other nodes and layout -->
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2213219e" height="30.0" layoutX="143.0" layoutY="81.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="455.0" />
+
+        <!-- Button styled to look like the label -->
+        <Button layoutX="143.0" layoutY="83.0" onAction="#retournerALaPagePrecedente" prefHeight="0.0" prefWidth="33.0" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+            <graphic>
+                <Text fill="#f5d000" text="◀" />
+            </graphic>
+        </Button>
+
+        <!-- Button styled to look like the label -->
+        <Text fill="WHITE" layoutX="175.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Ajouter une nouveau Musee" />
+    </children>
+</AnchorPane>

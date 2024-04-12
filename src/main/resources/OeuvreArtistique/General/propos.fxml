@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.General.GeneralLayouts">
+    <fx:include fx:id="Navbar" source="../../Layouts/General/navbar.fxml" />
+   <Label layoutX="198.0" layoutY="96.0" style="-fx-font-weight: bold;" text="A propos de nous">
+      <font>
+         <Font name="Times New Roman" size="29.0" />
+      </font>
+   </Label>
+   <ImageView fitHeight="33.0" fitWidth="37.0" layoutX="300.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="/Layouts/Images/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg" />
+      </image>
+   </ImageView>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1" height="243.0" layoutX="46.0" layoutY="139.0" stroke="WHITE" strokeType="INSIDE" width="527.0" />
+   <ImageView fitHeight="222.0" fitWidth="188.0" layoutX="60.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="/Layouts/Images/c0b7276a9450eb70575f6c061f4df4f1.jpg" />
+      </image>
+   </ImageView>
+   <Label layoutX="248.0" layoutY="160.0" prefHeight="43.0" prefWidth="322.0" style="-fx-font-size: 15px;" text="Bienvenue sur ArtSpace, votre destination en " />
+   <Label layoutX="248.0" layoutY="193.0" prefHeight="43.0" prefWidth="322.0" style="-fx-font-size: 15px;" text="ligne pour découvrir, apprécier et acquérir des" />
+   <Label layoutX="248.0" layoutY="225.0" prefHeight="43.0" prefWidth="322.0" style="-fx-font-size: 15px;" text="œuvres d'art uniques et inspirantes. " />
+   <Label layoutX="248.0" layoutY="256.0" prefHeight="43.0" prefWidth="322.0" style="-fx-font-size: 15px;" text="Chez ArtSpace, nous croyons en la puissance " />
+   <Label layoutX="248.0" layoutY="287.0" prefHeight="43.0" prefWidth="322.0" style="-fx-font-size: 15px;" text="de l'art pour enrichir nos vies, stimuler notre " />
+   <Label layoutX="248.0" layoutY="319.0" prefHeight="43.0" prefWidth="322.0" style="-fx-font-size: 15px;" text="créativité et créer des connexions significatives." />
+</AnchorPane>

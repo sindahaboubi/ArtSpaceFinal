@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainAnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.oeuvreArtistique.ListeOeuvresAdminController">
+    <children>
+        <fx:include fx:id="Sidebar" source="../../Layouts/Admin/sideBar.fxml" />
+        <fx:include fx:id="Navbar" source="../../Layouts/General/navbarAdmin.fxml" />
+        <ScrollPane fx:id="scrollPane" layoutX="169.0" layoutY="154.0" prefHeight="235.0" prefWidth="400.0">
+            <content>
+                <VBox fx:id="carteContainer" prefHeight="50.0" prefWidth="10.0" spacing="10.0" />
+            </content>
+        </ScrollPane>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#549ec6" height="30.0" layoutX="141.0" layoutY="79.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="455.0" />
+        <Text fill="WHITE" layoutX="154.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Liste des oeuvres artistiques" />
+        <RadioButton fx:id="voirTousRadioButton" layoutX="208.0" layoutY="121.0" mnemonicParsing="false" text="Voir tous" />
+        <RadioButton fx:id="aTraiterRadioButton" layoutX="282.0" layoutY="121.0" mnemonicParsing="false" text="A traiter" />
+        <RadioButton fx:id="accepteesRadioButton" layoutX="351.0" layoutY="121.0" mnemonicParsing="false" text="Acceptées" />
+        <RadioButton fx:id="refuseesRadioButton" layoutX="439.0" layoutY="121.0" mnemonicParsing="false" text="Refusées" />
+    </children>
+</AnchorPane>

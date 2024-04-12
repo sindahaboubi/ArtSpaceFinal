@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.oeuvreArtistique.AjouterOeuvreArtistiqueController">
+   <children>
+      <fx:include fx:id="Sidebar" source="../../Layouts/Artiste/sidebar.fxml" />
+      <fx:include fx:id="Navbar" source="../../Layouts/General/navbarArtiste.fxml" />
+      <ImageView fitHeight="47.0" fitWidth="23.0" layoutX="13.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+      </ImageView>
+      <ImageView fx:id="image" fitHeight="78.0" fitWidth="127.0" layoutX="317.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e5e5e50b" height="213.0" layoutX="143.0" layoutY="109.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.2" width="455.0" />
+      <TextField fx:id="titre" layoutX="159.0" layoutY="156.0" prefHeight="25.0" prefWidth="143.0" promptText="Titre de l'oeuvre" />
+      <TextArea fx:id="description" layoutX="158.0" layoutY="220.0" prefHeight="70.0" prefWidth="247.0" promptText="Description de l'oeuvre" />
+      <Button fx:id="AjouterOeuvre" layoutX="334.0" layoutY="342.0" mnemonicParsing="false" onAction="#handleAjouterOeuvre" prefHeight="30.0" prefWidth="73.0" style="-fx-background-color: #808080;" text="Ajouter" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="prix" layoutX="315.0" layoutY="155.0" prefHeight="25.0" prefWidth="136.0" promptText="Prix unitaire (en DT)" />
+      <Button fx:id="imageImport" layoutX="496.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleImporterImage" prefHeight="25.0" prefWidth="85.0" text="Importer" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2213219e" height="30.0" layoutX="143.0" layoutY="81.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="455.0" />
+      <Text fill="WHITE" layoutX="167.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Ajouter une nouvelle oeuvre artistique" />
+      <Text layoutX="159.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titre" />
+      <Text layoutX="315.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix" />
+      <Text layoutX="159.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+      <Text layoutX="420.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="70.0" layoutX="418.0" layoutY="220.0" stroke="#b2b2b2" strokeType="INSIDE" width="73.0" />
+      <ImageView fx:id="imagePreview" fitHeight="70.0" fitWidth="67.0" layoutX="421.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="imageErrorLabel" layoutX="419.0" layoutY="290.0" prefHeight="17.0" prefWidth="149.0" text="Ce champ est obligatoire" textFill="RED" visible="false" />
+      <Label fx:id="descriptionErrorLabel" layoutX="159.0" layoutY="290.0" prefHeight="17.0" prefWidth="149.0" text="Ce champ est obligatoire" textFill="RED" visible="false" />
+      <Label fx:id="prixErrorLabel" layoutX="320.0" layoutY="182.0" prefHeight="17.0" prefWidth="136.0" text="Ce champ est obligatoire" textFill="RED" visible="false" />
+      <Label fx:id="titreErrorLabel" layoutX="159.0" layoutY="182.0" prefHeight="17.0" prefWidth="149.0" text="Ce champ est obligatoire" textFill="RED" visible="false" />
+      <Text layoutX="463.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catégorie" />
+      <ComboBox fx:id="categorieComboBox" layoutX="463.0" layoutY="155.0" prefHeight="25.0" prefWidth="119.0" promptText="Sélectionner une catégorie" />
+      <Label layoutX="144.0" layoutY="67.0" onMouseClicked="#retournerALaPagePrecedente" prefHeight="0.0" prefWidth="33.0" style="-fx-font-size: 40px;" styleClass="back-arrow" text="◀" textFill="#f5d000" />
+   </children>
+</AnchorPane>

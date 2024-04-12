@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controllers.LayoutsControllers.sideBarArtiste">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00146f" height="352.0" layoutX="-5.0" layoutY="56.0" stroke="BLACK" strokeType="INSIDE" width="133.0" />
+        <Label layoutX="16.0" layoutY="65.0" prefHeight="25.0" prefWidth="133.0" style="-fx-font-size: 14px;" text="Sinda Haboubi" textAlignment="CENTER" textFill="WHITE" />
+        <Label layoutX="41.0" layoutY="114.0" prefHeight="17.0" prefWidth="85.0" style="-fx-font-size: 16px;" text="Musées" textFill="WHITE" />
+        <ImageView fitHeight="47.0" fitWidth="23.0" layoutX="10.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="/Layouts/Images/musee (1).png" />
+            </image>
+        </ImageView>
+        <Label layoutX="42.0" layoutY="155.0" prefHeight="17.0" prefWidth="85.0" style="-fx-font-size: 16px;" text="Oeuvres" textFill="WHITE" />
+        <ImageView fitHeight="47.0" fitWidth="23.0" layoutX="11.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="/Layouts/Images/art.png" />
+            </image>
+        </ImageView>
+        <Line endX="33.0" layoutX="88.0" layoutY="95.0" startX="-84.5" stroke="WHITE" />
+    </children>
+</AnchorPane>
